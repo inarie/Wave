@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="dCategory" modal="true">
+		<ActionBar id="actionbar" title=" "/>
+		<Button>NEXT</Button>
+	</Window>
+</Alloy>
