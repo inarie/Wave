@@ -1,10 +1,10 @@
-"#dMap": {
+"#dSummary": {
     backgroundColor: "white",
-    layout: "vertical"
+    layout: "vertical"	
 }
 
 "#actionbar": {
     icon: "/actionicon.png",
     displayHomeAsUp: true,
-    backgroundImage: "/actionbackground.png"
+    backgroundImage: "/actionBackground.png"	
 }

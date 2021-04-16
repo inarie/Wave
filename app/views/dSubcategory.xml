@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="dCategory" modal="true">
+	<Window id="dSubcategory" modal="true">
 		<ActionBar id="actionbar" title=" "/>
 		<Button onClick="nextView">NEXT</Button>
 	</Window>

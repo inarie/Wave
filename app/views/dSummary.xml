@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id="dSummary" modal="true">
+		<ActionBar id="actionbar" title=" "/>
+	</Window>
+</Alloy>

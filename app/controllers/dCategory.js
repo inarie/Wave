@@ -4,3 +4,8 @@ $.dCategory.addEventListener("open", function(e) {
         $.dCategory.close();
     }; 
 });
+
+function nextView() {
+    var dSubcategory = Alloy.createController("dSubcategory").getView();
+    dSubcategory.open();
+}

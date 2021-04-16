@@ -1,4 +1,4 @@
-"Window": {
+"#dMain": {
     backgroundColor: "white",
     layout: "vertical"
 }
