@@ -1,6 +1,6 @@
 <Alloy>
-	<Window id="dMap" modal="true">
-		<ActionBar id="actionbar" title=" "/>
+	<Window id="dMap">
+		<ActionBar id="actionbar" title="Map"/>
 		<Button onClick="nextView">NEXT</Button>
 	</Window>
 </Alloy>

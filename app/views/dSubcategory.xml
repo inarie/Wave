@@ -1,6 +1,6 @@
 <Alloy>
-	<Window id="dSubcategory" modal="true">
-		<ActionBar id="actionbar" title=" "/>
+	<Window id="dSubcategory">
+		<ActionBar id="actionbar" title="Subcategory"/>
 		<Button onClick="nextView">NEXT</Button>
 	</Window>
 </Alloy>

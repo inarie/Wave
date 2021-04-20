@@ -1,5 +1,8 @@
 <Alloy>
-	<Window id="dMain">
-		<Button onClick="nextView">NEXT</Button>
+	<Window id="dMain" onOpen="go_back">
+		<ActionBar id="actionbar" title="Main"/>
+		<TableView id="table">
+		
+		</TableView>
 	</Window>
 </Alloy>

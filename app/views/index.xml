@@ -1,4 +1,6 @@
 <Alloy>
-	<Window id="win">		
+	<Window id="win">
+		<ActionBar id="actionbar" title="Index"/>
+		<Button onClick="nextView">NEXT</Button>		
 	</Window>
 </Alloy>
