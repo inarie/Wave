@@ -5,9 +5,14 @@ function go_back () {
     };
 }
 
-function nextView() {
-    var dMap = Alloy.createController("dMap").getView();
-    dMap.open();
+function nextView(e) {
+    if (e.source.id == 3){
+        var dMap = Alloy.createController("dMap").getView();
+        dMap.open();
+    }else{
+        var dCategory = Alloy.createController("dCategory").getView();
+        dCategory.open();
+    }
 }
 
 var args = $.args;
@@ -16,9 +21,9 @@ console.log(args);
 tableData = []
 var section = "";
 var row = "";
-var rowTitle = ["Dive Buddies", "Dive Center", "Dive Time"];
+var rowTitle = ["Dive Buddies", "Dive Center", "Dive Time", "Dive Location"];
 
-for (var i=0; i<3; i++){
+for (var i=0; i<4; i++){
 
     /* if (i % 5 == 0){
         section = Ti.UI.createTableViewSection({

@@ -1,9 +1,9 @@
-$.dMap.addEventListener("open", function(e) { 
+function go_back () {
     var actionBar = $.dMap.activity.actionBar; 
     actionBar.onHomeIconItemSelected = function() { 
         $.dMap.close();
     };
-});
+}
 
 function nextView() {
     var dCategory = Alloy.createController("dCategory").getView();
