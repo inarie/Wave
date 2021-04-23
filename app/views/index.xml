@@ -1,6 +1,10 @@
 <Alloy>
 	<Window id="win">
 		<ActionBar id="actionbar" title="Index"/>
-		<Button onClick="nextView">NEXT</Button>		
+		<TableView id="index_table">
+			<TableViewRow><Button id="whale_btn">Whale</Button></TableViewRow>
+			<TableViewRow><Button id="litter_btn">Litter</Button></TableViewRow>
+			<TableViewRow><Button id="dive_btn">Dive</Button></TableViewRow>
+		</TableView>
 	</Window>
 </Alloy>
