@@ -12,7 +12,7 @@
   <fullscreen>false</fullscreen>
   <navbar-hidden>false</navbar-hidden>
   <analytics>true</analytics>
-  <guid>009a5c22-879d-42a3-9eee-2f97dadace91</guid>
+  <guid>001de274-1d79-4a0a-a841-82f0223df4ef</guid>
   <property name="ti.ui.defaultunit" type="string">dp</property>
   <property name="run-on-main-thread" type="bool">true</property>
   <ios>
@@ -46,9 +46,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest 
       xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1">
+      <application android:theme="@style/Theme.AppCompat.Translucent">
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyANacdkPwUKo7N2CGV_eJSq5HvLTGztZcM">
+        
+        </meta-data> 
+      </application>
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     </manifest>
   </android>
-  <modules></modules>
+  <modules>
+    <module platform="android">ti.map</module>
+  </modules>
   <deployment-targets>
     <target device="android">true</target>
   </deployment-targets>

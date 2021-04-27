@@ -1,6 +1,8 @@
 <Alloy>
 	<Window id="dMap" onOpen="go_back">
 		<ActionBar id="actionbar" title="Map"/>
-		<Button onClick="nextView">NEXT</Button>
+		<View id="map_view">
+		
+		</View>
 	</Window>
 </Alloy>
