@@ -1,5 +1,5 @@
 "#dMain": {
-    backgroundColor: "white",
+    backgroundColor: "grey",
     layout: "vertical"
 }
 

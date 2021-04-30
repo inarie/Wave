@@ -5,7 +5,25 @@ function go_back () {
     };
 }
 
-function nextView(e) {
+function persons_click(){
+    var dMap = Alloy.createController("dMap").getView();
+    dMap.open(); 
+}
+
+function duration_click(){
+    var dMap = Alloy.createController("dMap").getView();
+    dMap.open(); 
+}
+
+function map_click(){
+    var dMap = Alloy.createController("dMap").getView();
+    dMap.open(); 
+}
+
+function loadProperties (){
+    $.location.text = "Company: " + Alloy.Globals.annotation.title;
+}
+/* function nextView(e) {
     if (e.source.id == 3){
         var dMap = Alloy.createController("dMap").getView();
         dMap.open();
@@ -30,7 +48,7 @@ for (var i=0; i<4; i++){
             headerTitle : "section"   
         });
         tableData.push(section);
-    } */
+    } 
 
     row = Ti.UI.createTableViewRow({
         title : rowTitle[i],
@@ -43,4 +61,4 @@ for (var i=0; i<4; i++){
     
 }
 
-$.table.setData(tableData);
+$.table.setData(tableData); */

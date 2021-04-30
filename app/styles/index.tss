@@ -1,5 +1,5 @@
 "#win": {
-	backgroundColor:"white"
+	backgroundColor: "grey"
 }
 
 "TableViewRow" : {

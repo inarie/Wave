@@ -1,8 +1,12 @@
 <Alloy>
 	<Window id="dMain" onOpen="go_back">
 		<ActionBar id="actionbar" title="Main"/>
+		<View id="main_view">
 		<TableView id="table" onClick="nextView">
-		
+			<TableViewRow><Button id="map_btn" onClick="map_click">MAP</Button></TableViewRow>
+			<TableViewRow><Button id="persons_btn" onClick="persons_click">PERSONS</Button></TableViewRow>
+			<TableViewRow><Button id="duration_btn" onClick="duration_click">DIVE</Button></TableViewRow>
 		</TableView>
+		</View>
 	</Window>
 </Alloy>
