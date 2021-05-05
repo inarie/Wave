@@ -1,6 +1,6 @@
 var MapModule = require("ti.map");
+Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_HIGH;
 
-//Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_HIGH;
 var pins = [
     MapModule.createAnnotation({
         latitude: 37.389569,
@@ -66,7 +66,7 @@ $.dMap.addEventListener('open', function() {
 
 mapView.addEventListener('click', function(e){
     console.log(e);
-    Alloy.Globals.annotation = e;
+    Alloy.Globals.annotations = e;
     $.dMap.close();
 });
 
@@ -76,12 +76,3 @@ function go_back () {
         $.dMap.close();
     };
 }
-
-
-
-
-
-/* function nextView() {
-    var dCategory = Alloy.createController("dCategory").getView();
-    dCategory.open();
-} */

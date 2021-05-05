@@ -3,7 +3,6 @@
 }
 
 "#map_view" : {
-    navBarHidden: true,
     fullscreen: true,
     width: Ti.UI.FILL,
     height: Ti.UI.FILL,

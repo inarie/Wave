@@ -1,25 +1,26 @@
 "#win": {
-	backgroundColor: "grey"
+	backgroundColor: "white",
+	layout: "vertical"
 }
 
 "TableViewRow" : {
 	width : "100%",
-	height : 400
+	height : 225
 }
 
 "Button" : {
 	width: "100%",
-	height: "33%"
+	height: "98%"
 }
 
 "#whale_btn": {
-	backgroundImage: "whale.png"	
+	backgroundImage: "../../whale.png"	
 }
 
 "#litter_btn": {
-	backgroundImage: "litter.png"	
+	backgroundImage: "../../litter.png"	
 }
 
 "#dive_btn": {
-	backgroundImage: "dive.png"	
+	backgroundImage: "../../dive.png"	
 }

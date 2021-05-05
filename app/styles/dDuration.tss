@@ -1,0 +1,28 @@
+"#dDuration": {
+    backgroundColor: "rgb(125,125,125)"
+}
+
+"#actionbar" : {
+    icon: "/actionicon.png",
+    displayHomeAsUp: true,
+    backgroundImage: "/actionbackground.png",
+    bottom: "12%"
+}
+
+"#slider":{
+    min : 2,
+    max : 120,
+    tintColor: "white",
+    width: "80%",
+    bottom: "12%"
+}
+
+"#label" : {
+    bottom: "20%",
+    font: {
+        fontSize: 30,
+        fontFamily: "Aquatico-Regular",
+        fontWeight: "bold"
+    },
+    color : "white"
+}

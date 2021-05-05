@@ -3,8 +3,20 @@
     layout: "vertical"
 }
 
+".row":{
+    height: "500px",
+    left: "45%",
+    width:"100%"
+}
+
 "#actionbar": {
     icon: "/actionicon.png",
     displayHomeAsUp: true,
     backgroundImage: "/actionbackground.png"
+}
+
+".label":{
+    font: {
+        fontSize: "14"
+    }
 }

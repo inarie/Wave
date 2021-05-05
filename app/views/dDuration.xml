@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id="dDuration" class="container" onOpen="go_back">
+		<ImageView id="actionbar" title="Duration"></ImageView>
+		<Label id="label"></Label>
+		<TableView id="table"></TableView>
+		<Slider id="slider" onChange="sliderEvent"></Slider>
+	</Window>
+</Alloy>

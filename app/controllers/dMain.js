@@ -1,3 +1,15 @@
+function loadProperties(){
+    if(Alloy.Globals.annotations){
+        $.location.text = "Location: " + Alloy.Globals.annotations.title;
+    }
+    if(Ti.App.Properties.getInt("persons")){
+        $.persons.text = "Persons: " + Ti.App.Properties.getInt("persons");
+    }
+    if(Ti.App.Properties.getInt("duration")){
+        $.duration.text = "Duration: " + Ti.App.Properties.getInt("duration");
+    }
+}
+
 function go_back () {
     var actionBar = $.dMain.activity.actionBar; 
     actionBar.onHomeIconItemSelected = function() { 
@@ -5,60 +17,17 @@ function go_back () {
     };
 }
 
-function persons_click(){
+function goToPersons(){
+    var dPersons = Alloy.createController("dPersons").getView();
+    dPersons.open();
+}
+
+function goToMap(){
     var dMap = Alloy.createController("dMap").getView();
-    dMap.open(); 
+    dMap.open();
 }
 
-function duration_click(){
-    var dMap = Alloy.createController("dMap").getView();
-    dMap.open(); 
+function goToDuration(){
+    var dDuration = Alloy.createController("dDuration").getView();
+    dDuration.open();
 }
-
-function map_click(){
-    var dMap = Alloy.createController("dMap").getView();
-    dMap.open(); 
-}
-
-function loadProperties (){
-    $.location.text = "Company: " + Alloy.Globals.annotation.title;
-}
-/* function nextView(e) {
-    if (e.source.id == 3){
-        var dMap = Alloy.createController("dMap").getView();
-        dMap.open();
-    }else{
-        var dCategory = Alloy.createController("dCategory").getView();
-        dCategory.open();
-    }
-}
-
-var args = $.args;
-console.log(args);
-
-tableData = []
-var section = "";
-var row = "";
-var rowTitle = ["Dive Buddies", "Dive Center", "Dive Time", "Dive Location"];
-
-for (var i=0; i<4; i++){
-
-    /* if (i % 5 == 0){
-        section = Ti.UI.createTableViewSection({
-            headerTitle : "section"   
-        });
-        tableData.push(section);
-    } 
-
-    row = Ti.UI.createTableViewRow({
-        title : rowTitle[i],
-        color: "black",
-        id : i
-    }); 
-    tableData.push(row);
-    
-    //section.add(row);
-    
-}
-
-$.table.setData(tableData); */

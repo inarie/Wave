@@ -1,12 +1,18 @@
 <Alloy>
-	<Window id="dMain" onOpen="go_back">
+	<Window id="dMain" class="container" onOpen="go_back" onFocus="loadProperties">
 		<ActionBar id="actionbar" title="Main"/>
-		<View id="main_view">
-		<TableView id="table" onClick="nextView">
-			<TableViewRow><Button id="map_btn" onClick="map_click">MAP</Button></TableViewRow>
-			<TableViewRow><Button id="persons_btn" onClick="persons_click">PERSONS</Button></TableViewRow>
-			<TableViewRow><Button id="duration_btn" onClick="duration_click">DIVE</Button></TableViewRow>
+		<TableView id="table">
+			<TableViewSection>
+				<TableViewRow class="row" onClick="goToPersons">
+					<Label id="persons" class="label">Persons:</Label>
+				</TableViewRow>
+				<TableViewRow class="row" onClick="goToMap">
+					<Label id="location" class="label">Location:</Label> 
+				</TableViewRow>
+				<TableViewRow class="row" onClick="goToDuration">
+					<Label id="duration" class="label">Duration:</Label>
+				</TableViewRow>
+			</TableViewSection>
 		</TableView>
-		</View>
 	</Window>
 </Alloy>
