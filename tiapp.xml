@@ -11,7 +11,7 @@
   <icon>appicon.png</icon>
   <fullscreen>false</fullscreen>
   <navbar-hidden>false</navbar-hidden>
-  <analytics>true</analytics>
+  <analytics>false</analytics>
   <guid>001de274-1d79-4a0a-a841-82f0223df4ef</guid>
   <property name="ti.ui.defaultunit" type="string">dp</property>
   <property name="run-on-main-thread" type="bool">true</property>
@@ -55,8 +55,6 @@
     </manifest>
   </android>
   <modules>
-    <module platform="android">hyperloop</module>
-    <module platform="commonjs">ti.cloud</module>
     <module platform="android">ti.map</module>
   </modules>
   <deployment-targets>

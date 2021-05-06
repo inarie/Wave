@@ -199,8 +199,18 @@ var mapView = MapModule.createView({
     userLocation : true,
     zoom : 8,
     annotations : pins
-
 });
+
+mapView.setLocation ({
+    latitude : 32.688656,
+    longitude : -16.791765,
+    animate : true,
+    latitudeDelta : 0.04,
+    longitudeDelta : 0.04
+})
+
+
+
 
 $.dMap.addEventListener('open', function() {
     console.log(Ti.Geolocation.hasLocationPermissions());
