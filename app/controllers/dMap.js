@@ -1,3 +1,15 @@
+var args = arguments[0] || {};
+
+$.dMap.backgroundImage = "background/" + Ti.App.Properties.getString("mode") + ".png";
+
+if(Ti.App.Properties.getString("mode") === "dive"){
+    $.dMap.backgroundColor = "#0364BB";
+} else if(Ti.App.Properties.getString("mode") === "whale") {
+    $.dMap.backgroundColor = "#EB807E";
+} else {
+    $.dMap.backgroundColor = "#A7EAEB";
+}
+
 var MapModule = require("ti.map");
 Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_HIGH;
 
@@ -201,13 +213,13 @@ var mapView = MapModule.createView({
     annotations : pins
 });
 
-mapView.setLocation ({
+mapView.location = {
     latitude : 32.688656,
     longitude : -16.791765,
     animate : true,
     latitudeDelta : 0.04,
     longitudeDelta : 0.04
-})
+};
 
 
 
@@ -233,10 +245,3 @@ mapView.addEventListener('click', function(e){
     Alloy.Globals.annotations = e;
     $.dMap.close();
 });
-
-function go_back () {
-    var actionBar = $.dMap.activity.actionBar; 
-    actionBar.onHomeIconItemSelected = function() { 
-        $.dMap.close();
-    };
-}

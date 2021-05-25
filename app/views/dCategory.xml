@@ -1,6 +1,5 @@
 <Alloy>
-	<Window id="dCategory" onOpen="go_back">
-		<ActionBar id="actionbar" title="Category"/>
+	<Window id="dCategory">
 		<TableView id="table" onClick="nextView">
 		
 		</TableView>

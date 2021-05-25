@@ -2,12 +2,6 @@
     backgroundColor: "rgb(125,125,125)"
 }
 
-"#actionbar" : {
-    icon: "/actionicon.png",
-    displayHomeAsUp: true,
-    backgroundImage: "/actionbackground.png"
-}
-
 "#slider":{
     min : 1,
     max : 20,

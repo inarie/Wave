@@ -12,7 +12,7 @@
   <fullscreen>false</fullscreen>
   <navbar-hidden>false</navbar-hidden>
   <analytics>false</analytics>
-  <guid>001de274-1d79-4a0a-a841-82f0223df4ef</guid>
+  <guid>214c9e6c-730f-48d6-9888-e89ae410682d</guid>
   <property name="ti.ui.defaultunit" type="string">dp</property>
   <property name="run-on-main-thread" type="bool">true</property>
   <ios>
@@ -39,6 +39,14 @@
         <false/>
         <key>UIStatusBarStyle</key>
         <string>UIStatusBarStyleDefault</string>
+        <key>NSLocationAlwaysUsageDescription</key>
+        <string>Program requires GPS to track cars and job orders</string>
+        <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+        <string>Program requires GPS to track cars and job orders</string>
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>Program requires GPS to track cars and job orders</string>
+        <key>NSMicrophoneUsageDescription</key>
+        <string>This app uses your Microphone to allow Voice over IP communication with the Program Admin system</string>
       </dict>
     </plist>
   </ios>
@@ -56,11 +64,12 @@
   </android>
   <modules>
     <module platform="android">ti.map</module>
+    <module platform="ios">ti.map</module>
   </modules>
   <deployment-targets>
     <target device="android">true</target>
   </deployment-targets>
-  <sdk-version>9.2.1.GA</sdk-version>
+  <sdk-version>10.1.0.v20210407105946</sdk-version>
   <plugins>
     <plugin version="1.0">ti.alloy</plugin>
   </plugins>

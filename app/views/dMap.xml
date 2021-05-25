@@ -1,6 +1,5 @@
 <Alloy>
-	<Window id="dMap" class="container" onOpen="go_back">
-		<ActionBar id="actionbar" title="Map"/>
+	<Window id="dMap" title="Company" class="container">
 		<View id="map_view">
 		
 		</View>

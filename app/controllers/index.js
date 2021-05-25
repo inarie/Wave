@@ -1,6 +1,15 @@
-$.win.open();
+Ti.App.Properties.setString("serverUrl", "http://wave.arditi.pt/api/");
 
-function dive_click(){
-    var dMain = Alloy.createController("dMain").getView();
-    dMain.open();  
+$.navWin.open();
+
+function select_mode(e) {
+    console.log(e.source.id);
+    Ti.App.Properties.setString("mode", e.source.id);
+
+    var dMain = Alloy.createController("dMain", $.navWin).getView();
+    $.navWin.openWindow(dMain);
 }
+
+var getData = require("posts");
+getData.post("creature", "", "", "GET");
+getData = null;

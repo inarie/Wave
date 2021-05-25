@@ -1,21 +1,18 @@
 "#dMain": {
-    backgroundColor: "grey",
-    layout: "vertical"
+    largeTitleEnabled: false
 }
 
 ".row":{
     height: "500px",
-    width:"100%"
-}
-
-"#actionbar": {
-    icon: "/actionicon.png",
-    displayHomeAsUp: true,
-    backgroundImage: "/actionbackground.png"
-}
-
-".label":{
+    width:"100%",
+    hasChild: true,
     font: {
-        fontSize: "14"
+        fontSize: "20"
     }
+}
+
+"TableView": {
+    backgroundColor:'transparent',
+    separatorColor: "transparent",
+	separatorStyle: "none"	
 }

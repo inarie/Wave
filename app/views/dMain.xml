@@ -1,16 +1,12 @@
 <Alloy>
-	<Window id="dMain" class="container" onOpen="go_back" onFocus="loadProperties">
-		<ActionBar id="actionbar" title="Main"/>
-		<TableView id="table">
+	<Window id="dMain" class="container" title="Pre  Survey" onFocus="loadProperties">
+		<TableView id="table" onClick="openSurvey">
 			<TableViewSection>
-				<TableViewRow class="row" onClick="goToPersons">
-					<Label id="persons" class="label">Persons:</Label>
+				<TableViewRow class="row" title="Persons">
 				</TableViewRow>
-				<TableViewRow class="row" onClick="goToMap">
-					<Label id="location" class="label">Location:</Label> 
+				<TableViewRow class="row" title="Company">
 				</TableViewRow>
-				<TableViewRow class="row" onClick="goToDuration">
-					<Label id="duration" class="label">Duration:</Label>
+				<TableViewRow class="row" title="Time">
 				</TableViewRow>
 			</TableViewSection>
 		</TableView>
