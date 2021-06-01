@@ -1,4 +1,4 @@
-Ti.App.Properties.setString("serverUrl", "http://wave.arditi.pt/api/");
+Ti.App.Properties.setString("serverUrl", "http://wave-labs.org/api/");
 
 $.navWin.open();
 

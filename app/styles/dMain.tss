@@ -1,5 +1,6 @@
 "#dMain": {
-    largeTitleEnabled: false
+    largeTitleEnabled: false,
+    layout: 'vertical'
 }
 
 ".row":{
@@ -14,5 +15,18 @@
 "TableView": {
     backgroundColor:'transparent',
     separatorColor: "transparent",
-	separatorStyle: "none"	
+	separatorStyle: "none",
+    height: "90%",
+    scrollable: false
+}
+
+"#next": {
+    width: Ti.UI.FILL,
+    height: "10%",
+    title: "Next",
+    color: "white",
+    backgroundColor: "transparent",
+    font: {
+        fontSize: "22"
+    }
 }

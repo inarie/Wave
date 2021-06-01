@@ -10,5 +10,6 @@
 				</TableViewRow>
 			</TableViewSection>
 		</TableView>
+		<Button id="next"></Button>
 	</Window>
 </Alloy>
