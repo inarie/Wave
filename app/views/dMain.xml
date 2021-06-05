@@ -1,15 +1,15 @@
 <Alloy>
 	<Window id="dMain" class="container" title="Pre  Survey" onFocus="loadProperties">
 		<TableView id="table" onClick="openSurvey">
-			<TableViewSection>
-				<TableViewRow class="row" title="Persons">
+			<TableViewSection id="row">
+				<TableViewRow class="row" id="persons" title="Persons">
 				</TableViewRow>
-				<TableViewRow class="row" title="Company">
+				<TableViewRow class="row" id="location" title="Company">
 				</TableViewRow>
-				<TableViewRow class="row" title="Time">
+				<TableViewRow class="row" id="duration" title="Time">
 				</TableViewRow>
 			</TableViewSection>
 		</TableView>
-		<Button id="next"></Button>
+		<Button id="next" onClick="openMap"></Button>
 	</Window>
 </Alloy>

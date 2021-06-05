@@ -1,13 +1,14 @@
 var args = arguments[0] || {};
 
-$.dMap.backgroundImage = "background/" + Ti.App.Properties.getString("mode") + ".png";
-
 if(Ti.App.Properties.getString("mode") === "dive"){
     $.dMap.backgroundColor = "#0364BB";
+    args.tintColor = "white";
 } else if(Ti.App.Properties.getString("mode") === "whale") {
     $.dMap.backgroundColor = "#EB807E";
+    args.tintColor = "white";
 } else {
     $.dMap.backgroundColor = "#A7EAEB";
+    args.tintColor = "black";
 }
 
 var MapModule = require("ti.map");
@@ -221,9 +222,6 @@ mapView.location = {
     longitudeDelta : 0.04
 };
 
-
-
-
 $.dMap.addEventListener('open', function() {
     console.log(Ti.Geolocation.hasLocationPermissions());
     if (Ti.Geolocation.hasLocationPermissions()) {
@@ -241,7 +239,6 @@ $.dMap.addEventListener('open', function() {
 });
 
 mapView.addEventListener('click', function(e){
-    console.log(e);
     Alloy.Globals.annotations = e;
     $.dMap.close();
 });

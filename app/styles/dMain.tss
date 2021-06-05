@@ -21,12 +21,14 @@
 }
 
 "#next": {
-    width: Ti.UI.FILL,
-    height: "10%",
+    width: "30%",
+    height: "7%",
     title: "Next",
     color: "white",
-    backgroundColor: "transparent",
     font: {
         fontSize: "22"
-    }
+    },
+    opacity: "0%",
+    borderRadius: 10,
+    borderWidth: 0
 }

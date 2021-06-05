@@ -1,0 +1,6 @@
+"#mapView":{
+  fullscreen: true,
+  width: Ti.UI.FILL,
+  height: Ti.UI.FILL,
+  orientationModes: [Ti.UI.PORTRAIT]
+}

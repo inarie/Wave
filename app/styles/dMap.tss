@@ -1,7 +1,3 @@
-"#dMap": {
-    backgroundColor: 'rgb(125,125,125)',
-}
-
 "#map_view" : {
     fullscreen: true,
     width: Ti.UI.FILL,

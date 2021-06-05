@@ -1,4 +1,4 @@
 "#dSummary": {
-    backgroundColor: "white",
-    layout: "vertical"	
+    largeTitleEnabled: false,
+    layout: 'vertical'
 }

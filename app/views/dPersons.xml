@@ -1,7 +1,0 @@
-<Alloy>
-	<Window id="dPersons" class="container">
-		<Label id="label"></Label>
-		<TableView id="table"></TableView>
-		<Slider id="slider" onChange="sliderEvent"></Slider>
-	</Window>
-</Alloy>
