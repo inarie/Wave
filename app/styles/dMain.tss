@@ -1,21 +1,34 @@
 "#dMain": {
-    backgroundColor: "grey",
+    largeTitleEnabled: false,
     layout: "vertical"
 }
 
 ".row":{
     height: "500px",
-    width:"100%"
-}
-
-"#actionbar": {
-    icon: "/actionicon.png",
-    displayHomeAsUp: true,
-    backgroundImage: "/actionbackground.png"
-}
-
-".label":{
+    width:"100%",
+    hasChild: true,
     font: {
-        fontSize: "14"
+        fontSize: "20"
     }
+}
+
+"TableView": {
+    backgroundColor: 'transparent',
+    separatorColor: "transparent",
+        separatorStyle: "none",
+    height: "90%",
+    scrollable: false
+}
+
+"#next" : {
+    width: "30%",
+    height: "7%",
+    title: "Next",
+    color: "white",
+    font: {
+        fontSize: "22"
+    },
+    opacity: "0%",
+    borderRadius: 10,
+    borderWidth: 0
 }

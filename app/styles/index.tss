@@ -1,26 +1,33 @@
 "#win": {
-	backgroundColor: "white",
-	layout: "vertical"
+	backgroundColor: "#E6767C",
+	largeTitleEnabled: true
 }
 
-"TableViewRow" : {
-	width : "100%",
-	height : 225
+"TableView": {
+	separatorColor: "transparent",
+	separatorStyle: "none",
+	backgroundColor: "black",
+	scrollable: "false"
 }
 
 "Button" : {
-	width: "100%",
-	height: "98%"
+	width: Ti.UI.FILL,
+	height: 225,
+	borderColor: "transparent",
+	font: {
+		fontSize: "20",
+			fontFamily: "Aquatico-Regular"
+	}
 }
 
 "#whale_btn": {
-	backgroundImage: "../../whale.png"	
+	backgroundImage: "/img/bwhale.png"	
 }
 
 "#litter_btn": {
-	backgroundImage: "../../litter.png"	
+	backgroundImage: "/img/blitter.png"	
 }
 
 "#dive_btn": {
-	backgroundImage: "../../dive.png"	
+	backgroundImage: "/img/bdive.png"	
 }

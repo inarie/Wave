@@ -1,10 +1,5 @@
 "#dSummary": {
-    backgroundColor: "white",
+    largeTitleEnabled: false,
     layout: "vertical"	
 }
 
-"#actionbar": {
-    icon: "/actionicon.png",
-    displayHomeAsUp: true,
-    backgroundImage: "/actionBackground.png"	
-}

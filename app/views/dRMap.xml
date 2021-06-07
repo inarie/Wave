@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="dRMap" title="Report" class="container">
+		<View id="mapView">
+		</View>
+	</Window>
+</Alloy>

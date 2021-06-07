@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="dDetails" class="container">
+		<Label id="label"></Label>
+		<Slider id="slider" onChange="sliderEvent"></Slider>
+	</Window>
+</Alloy>

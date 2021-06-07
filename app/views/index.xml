@@ -1,10 +1,10 @@
 <Alloy>
-	<Window id="win">
-		<ActionBar id="actionbar" title="Index"/>
-		<TableView id="index_table">
-			<TableViewRow><Button id="whale_btn">Whale</Button></TableViewRow>
-			<TableViewRow><Button id="litter_btn">Litter</Button></TableViewRow>
-			<TableViewRow><Button id="dive_btn" onClick="dive_click">Dive</Button></TableViewRow>
+	<Window id="win"> 
+		<ActionBar id="actionbar"/>
+		<TableView id="index_table" onClick="select_mode">
+			<TableViewRow><Button id="whale">Whale</Button></TableViewRow>
+			<TableViewRow><Button id="litter">Litter</Button></TableViewRow>
+			<TableViewRow><Button id="dive">Dive</Button></TableViewRow>
 		</TableView>
 	</Window>
 </Alloy>

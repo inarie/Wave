@@ -1,0 +1,17 @@
+"#slider": {
+    min: 1,
+    max: 20,
+    tintColor: "white",
+    width: "80%",
+    bottom: "12%",
+    trackTintColor: "#808080"
+}
+
+"#label": {
+    bottom: "20%",
+    font: {
+        fontSize: 30,
+        fontWeight: "bold"
+    },
+    color: "white"
+}

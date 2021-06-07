@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="dSummary" onOpen="go_back">
-		<ActionBar id="actionbar" title="Summary"/>
+	<Window id="dSummary" title="Summary">
+
 	</Window>
 </Alloy>
