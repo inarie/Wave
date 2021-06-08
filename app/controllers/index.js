@@ -6,8 +6,8 @@ function select_mode(e) {
     console.log(e.source.id);
     Ti.App.Properties.setString("mode", e.source.id);
 
-    var dMain = Alloy.createController("dMain", $.navWin).getView();
-    $.navWin.openWindow(dMain);
+    var dMain = Alloy.createController("dMain", $.dMain).getView();
+    dMain.open();
 }
 
 var getData = require("posts");
