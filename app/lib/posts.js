@@ -1,27 +1,18 @@
 //POST
-exports.post = function(url, data, postFunction, requestType) {
+exports.post = function(url, dataType, postFunction, requestType) {
     //Setup
     var postURL = Ti.App.Properties.getString("serverUrl") + url;
-    console.log("----------------------------------------------");
-    console.log("-- POST - URL: " + postURL);
 
-    for (var child in data){
-        if (data.hasOwnProperty(child)){
-            console.log("-- POST - DATA: " + data[child]);
-        }
-    }
-
-	console.log("----------------------------------------------");
-
-    if(Titanium.Network.online){
+    if(Ti.Network.online){
         var xhr = Ti.Network.createHTTPClient({
             onload : function(){
                 if(this.status == "200") {
                     if(ckeckJSON(this.responseText)){
-                        //postFunction(JSON.parse(this.responseText));
-						Ti.App.Properties.setObject("creatures", this.responseText);
-						console.log(Ti.App.Properties.getObject("creatures"));
-						console.log("----------------------------------------------");
+                        Ti.App.Properties.setObject(dataType, this.responseText);
+                        
+                        if(postFunction !== ""){
+                            postFunction();
+                        }
 					}
                 }
             },
@@ -30,7 +21,7 @@ exports.post = function(url, data, postFunction, requestType) {
             timeout : 10000
         });
         xhr.open(requestType, postURL);
-        xhr.send(data);
+        xhr.send();
     } else {
 		alert("No internet");
     }

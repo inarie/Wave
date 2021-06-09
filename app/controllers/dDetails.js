@@ -6,11 +6,15 @@ if(winTitle === "persons"){
     $.slider.min = 1;
     $.slider.max = 20;
     $.label.text = "α " + winTitle;
+
+    $.img.image = "/1.png";
 }else{
     $.dDetails.title = "Time";
     $.slider.min = 2,
     $.slider.max = 120;
     $.label.text = "α minutes";
+
+    $.img.image = "/2.png";
 }
 
 $.dDetails.backgroundImage = "background/" + Ti.App.Properties.getString("mode") + ".png";
@@ -42,4 +46,7 @@ function sliderEvent(e){
             appealingNum = 62;
         }
     }
+
+    $.img.image = "" + appealingNum +".png";
+	$.img.width = appealingNum / 2 + 100 + "%";
 }

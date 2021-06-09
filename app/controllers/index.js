@@ -10,6 +10,37 @@ function select_mode(e) {
     $.navWin.openWindow(dMain);
 }
 
-var getData = require("posts");
-getData.post("creature", "", "", "GET");
-getData = null;
+var callBack = function(){
+    var litter = require("posts");
+    litter.post("litter-category", "litter", "", "GET");
+    //console.log(Ti.App.Properties.getObject("litter"));
+    litter = null;  
+}
+
+const creatures = require("posts");
+const allCreatures = [];
+let pages = 1;
+
+while(true) {
+  let url = "creature";
+  if (pages > 1) {
+    url += "?page=" + pages;
+  }
+
+  creatures.post(url, `creatures${pages}`, "", "GET");
+  const creaturesPage = Ti.App.Properties.getObject(`creatures${pages}`);
+  allCreatures.push(JSON.parse(creaturesPage));
+
+  if (pages === allCreatures[0].meta.last_page) {
+    break;
+  }
+
+  Ti.App.Properties.removeProperty(`creatures${pages}`);
+  pages++;
+}
+
+Ti.App.Properties.setObject('creatures', allCreatures);
+
+//creatures = null;
+
+callBack();

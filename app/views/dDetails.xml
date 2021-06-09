@@ -1,5 +1,6 @@
 <Alloy>
 	<Window id="dDetails" class="container">
+		<ImageView id="img"></ImageView>
 		<Label id="label"></Label>
 		<Slider id="slider" onChange="sliderEvent"></Slider>
 	</Window>

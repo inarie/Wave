@@ -1,6 +1,6 @@
 <Alloy>
-	<Window id="dCategory" title="Category">
-		<TableView id="table">
+	<Window id="dCategory" title="Category" onFocus="loadTableData">
+		<TableView id="table" onClick="openSubCategory">
 		</TableView>
 		<Button id="next" onClick="openSummary"></Button>
 	</Window>

@@ -20,5 +20,6 @@
         fontSize: "22"
     },
     borderRadius: 10,
-    borderWidth: 0
+    borderWidth: 0,
+    opacity: "0%"
 }
