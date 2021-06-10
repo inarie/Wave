@@ -14,7 +14,13 @@ if(Ti.App.Properties.getString("mode") === "dive"){
 } else if(Ti.App.Properties.getString("mode") === "whale") {
     $.dSubcategory.backgroundColor = "#EB807E";
     args.tintColor = "white";
-    $.img.image = Ti.App.Properties.getString("serverUrl") + "image/sighting/" + id;
+
+    var images = JSON.parse(Ti.App.Properties.getObject("whaleAppImages"));
+    images.data.forEach(img => {
+        if(img.creature_id === id)
+            $.img.image = Ti.App.Properties.getString("serverUrl") + img.url;
+    });
+
 } else {
     $.dSubcategory.backgroundColor = "#A7EAEB";
     args.tintColor = "black";

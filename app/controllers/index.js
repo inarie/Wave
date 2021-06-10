@@ -10,13 +10,6 @@ function select_mode(e) {
     $.navWin.openWindow(dMain);
 }
 
-var callBack = function(){
-    var litter = require("posts");
-    litter.post("litter-category", "litter", "", "GET");
-    //console.log(Ti.App.Properties.getObject("litter"));
-    litter = null;  
-}
-
 const creatures = require("posts");
 const allCreatures = [];
 let pages = 1;
@@ -43,4 +36,12 @@ Ti.App.Properties.setObject('creatures', allCreatures);
 
 //creatures = null;
 
-callBack();
+var litter = require("posts");
+litter.post("litter-category", "litter", "", "GET");
+//console.log(Ti.App.Properties.getObject("litter"));
+litter = null;  
+
+var whaleAppImages = require("posts");
+whaleAppImages.post("image/sighting", "whaleAppImages", "", "GET");
+//console.log(Ti.App.Properties.getObject("whaleAppImages"));
+whaleAppImages = null;  
