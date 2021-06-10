@@ -22,6 +22,7 @@ if(Ti.App.Properties.getString("mode") === "dive"){
 } else {
     $.dSummary.backgroundColor = "#A7EAEB";
     $.submit.backgroundColor = "#A7EAEB";
+    $.submit.color = "black";
     args.tintColor = "black";
     textColor = "black";
 }

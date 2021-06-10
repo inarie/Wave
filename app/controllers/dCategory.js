@@ -46,6 +46,7 @@ if(Ti.App.Properties.getString("mode") === "dive"){
 } else {
     $.dCategory.backgroundColor = "#A7EAEB";
     $.next.backgroundColor = "#A7EAEB";
+    $.next.color = "black";
     args.tintColor = "black";
     textColor = "black";
 
