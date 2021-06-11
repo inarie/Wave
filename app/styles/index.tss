@@ -20,14 +20,14 @@
 	}
 }
 
-"#whale_btn": {
+"#whale": {
 	backgroundImage: "/img/bwhale.png"	
 }
 
-"#litter_btn": {
+"#litter": {
 	backgroundImage: "/img/blitter.png"	
 }
 
-"#dive_btn": {
+"#dive": {
 	backgroundImage: "/img/bdive.png"	
 }

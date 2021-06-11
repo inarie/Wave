@@ -1,4 +1,3 @@
-var args = arguments[0] || {};
 var textColor = "";
 
 $.dCategory.backgroundImage = "/background/" + Ti.App.Properties.getString("mode") + ".png";
@@ -6,17 +5,14 @@ $.dCategory.backgroundImage = "/background/" + Ti.App.Properties.getString("mode
 if(Ti.App.Properties.getString("mode") === "dive") {
     $.dCategory.backgroundColor = "#0364BB";
     $.next.backgroundColor = "#0364BB";
-    args.tintColor = "white";
     textColor = "white";
 } else if (Ti.App.Properties.getString("mode") === "whale") {
     $.dCategory.backgroundColor = "#EB807E";
     $.next.backgroundColor = "#EB807E";
-    args.tintColor = "white";
     textColor = "white";
 } else {
     $.dCategory.backgroundColor = "#A7EAEB";
     $.next.backgroundColor = "#A7EAEB";
-    args.tintColor = "black";
     textColor = "black";
 }
 
@@ -31,12 +27,12 @@ for (var i=0; i<3; i++){
         hasChild: true,
         id: i
     });
-    tableData.pusg(row);
+    tableData.push(row);
 }
 
 $.table.setData(tableData);
 
 function openSummary() {
     var dSummary = Alloy.createController("dSummary", args).getView();
-    args.openWindow(dSummary);
+    dSummary.open();
 }

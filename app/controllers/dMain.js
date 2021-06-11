@@ -1,11 +1,8 @@
-var args = arguments[0] || {};
-
 $.dMain.backgroundImage = "/background/" + Ti.App.Properties.getString("mode") + ".png";
 
 if(Ti.App.Properties.getString("mode") === "dive"){
     $.dMain.backgroundColor = "#0364BB";
     $.next.backgroundColor = "#0364BB";
-    args.tintColor = "white";
 
     $.persons.color = "white";
     $.location.color = "white";
@@ -13,7 +10,6 @@ if(Ti.App.Properties.getString("mode") === "dive"){
 } else if(Ti.App.Properties.getString("mode") === "whale") {
     $.dMain.backgroundColor = "#EB807E";
     $.next.backgroundColor = "#EB807E";
-    args.tintColor = "white";
 
     $.persons.color = "white";
     $.location.color = "white";
@@ -22,7 +18,6 @@ if(Ti.App.Properties.getString("mode") === "dive"){
     $.dMain.backgroundColor = "#A7EAEB";
     $.next.backgroundColor = "#A7EAEB";
     $.next.color = "black";
-    args.tintColor = "black";
 
     $.persons.color = "black";
     $.location.color = "black";
@@ -46,15 +41,15 @@ function loadProperties(){
 
 function openSurvey(e) {
     if(e.source.id === "persons" || e.source.id === "duration"){
-        var dDetails = Alloy.createController("dDetails", {args, title: e.source.id}).getView();
-        args.openWindow(dDetails);
+        var dDetails = Alloy.createController("dDetails", {title: e.source.id}).getView();
+        dDetails.open();
     } else {
-        var dMap = Alloy.createController("dMap", args).getView();
-        args.openWindow(dMap);
+        var dMap = Alloy.createController("dMap").getView();
+        dMap.open();
     }
 }
 
 function openMap() {
-    var dRMap = Alloy.createController("dRMap", args).getView();
-    args.openWindow(dRMap);
+    var dRMap = Alloy.createController("dRMap").getView();
+    dRMap.open();
 }

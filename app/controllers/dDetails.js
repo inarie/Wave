@@ -1,4 +1,3 @@
-var args = arguments[0].args || {};
 const winTitle = arguments[0].title;
 
 if(winTitle === "persons"){
@@ -17,13 +16,10 @@ $.dDetails.backgroundImage = "/background/" + Ti.App.Properties.getString("mode"
 
 if(Ti.App.Properties.getString("mode") === "dive"){
     $.dDetails.backgroundColor = "#0364BB";
-    args.tintColor = "white";
 } else if(Ti.App.Properties.getString("mode") === "whale") {
     $.dDetails.backgroundColor = "#EB807E";
-    args.tintColor = "white";
 } else {
     $.dDetails.backgroundColor = "#A7EAEB";
-    args.tintColor = "black";
 }
 
 function sliderEvent(e){

@@ -1,14 +1,9 @@
-var args = arguments[0] || {};
-
 if(Ti.App.Properties.getString("mode") === "dive"){
     $.dMap.backgroundColor = "#0364BB";
-    args.tintColor = "white";
 } else if(Ti.App.Properties.getString("mode") === "whale") {
     $.dMap.backgroundColor = "#EB807E";
-    args.tintColor = "white";
 } else {
     $.dMap.backgroundColor = "#A7EAEB";
-    args.tintColor = "black";
 }
 
 var MapModule = require("ti.map");

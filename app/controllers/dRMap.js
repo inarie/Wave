@@ -1,23 +1,19 @@
 var mapModule = require("ti.map");
-var args = arguments[0] || {};
 var textColor = "";
 var backgroundColor = "";
 
 if(Ti.App.Properties.getString("mode") === "dive"){
     $.dRMap.backgroundColor = "#0364BB";
-    args.tintColor = "white";
 
     textColor = "white";
     backgroundColor = "#0364BB";
 } else if(Ti.App.Properties.getString("mode") === "whale") {
     $.dRMap.backgroundColor = "#EB807E";
-    args.tintColor = "white";
 
     textColor = "white";
     backgroundColor = "#EB807E";
 } else {
     $.dRMap.backgroundColor = "#A7EAEB";
-    args.tintColor = "black";
 
     textColor = "black";
     backgroundColor = "#A7EAEB";
@@ -96,6 +92,6 @@ mapView.addEventListener('mapclick', function(e) {
 });
 
 annotationBtn.addEventListener('click', function(){
-    var dCategory = Alloy.createController("dCategory", args).getView();
-    args.openWindow(dCategory);
+    var dCategory = Alloy.createController("dCategory").getView();
+    dCategory.open();
 });

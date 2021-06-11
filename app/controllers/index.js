@@ -1,4 +1,4 @@
-Ti.App.Properties.setString("serverUrl", "http://wave-labs.org/api/");
+Ti.App.Properties.setString("serverUrl", "http://89.109.64.184/api/");
 
 $.win.open();
 
@@ -10,6 +10,14 @@ function select_mode(e) {
     dMain.open();
 }
 
-var getData = require("posts");
-getData.post("creature", "", "", "GET");
-getData = null;
+var callBack = function(){
+    var litter = require("posts");
+    litter.post("litter", "litter", "", "GET");
+    console.log(Ti.App.Properties.getObject("litter"));
+    litter = null;
+}
+
+var creatures = require("posts");
+creatures.post("creature", "creatures", callBack, "GET");
+console.log(Ti.App.Properties.getObject("creatures"));
+creatures = null;
