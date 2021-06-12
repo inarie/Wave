@@ -32,3 +32,9 @@
     borderRadius: 10,
     borderWidth: 0
 }
+
+"#actionbar": {
+    icon: "/actionicon.png",
+    displayHomeAsUp: true,
+    backgroundImage: "/actionbackground.png"
+}

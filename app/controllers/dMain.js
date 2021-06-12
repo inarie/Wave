@@ -53,3 +53,10 @@ function openMap() {
     var dRMap = Alloy.createController("dRMap").getView();
     dRMap.open();
 }
+
+function go_back(){
+    var actionBar = $.dMain.activity.actionBar;
+    actionBar.onHomeIconSelected = function() {
+        $.dMain.close();
+    };
+}

@@ -95,3 +95,10 @@ annotationBtn.addEventListener('click', function(){
     var dCategory = Alloy.createController("dCategory").getView();
     dCategory.open();
 });
+
+function go_back(){
+    var actionBar = $.dRMap.activity.actionBar;
+    actionBar.onHomeIconSelected = function() {
+        $.dRMap.close();
+    };
+}

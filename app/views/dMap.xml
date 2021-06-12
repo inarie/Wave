@@ -1,7 +1,8 @@
 <Alloy>
-	<Window id="dMap" title="Company" class="container">
-		<View id="map_view">
-		
-		</View>
+	<Window id="dMap" class="container">
+		<ActionBar id="actionbar" title="Company"></ActionBar>
+			<View id="map_view">
+			
+			</View>
 	</Window>
 </Alloy>

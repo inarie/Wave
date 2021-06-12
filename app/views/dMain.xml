@@ -1,15 +1,16 @@
 <Alloy>
-	<Window id="dMain" class="container" title="Pre Survey" onFocus="loadProperties">
-		<TableView id="table" onClick="openSurvey">
-			<TableViewSection id="row">
-				<TableViewRow class="row" id="persons" title="Persons">
-				</TableViewRow>
-				<TableViewRow class="row" id="location" title="Location"> 
-				</TableViewRow>
-				<TableViewRow class="row" id="duration" tittle="Time">
-				</TableViewRow>
-			</TableViewSection>
-		</TableView>
-		<Button id="next" onClick="openMap"></Button>
+	<Window id="dMain" class="container" onFocus="loadProperties">
+		<ActionBar id="actionbar" title="Pre Survey"></ActionBar>
+			<TableView id="table" onClick="openSurvey">
+				<TableViewSection id="row">
+					<TableViewRow class="row" id="persons" title="Persons">
+					</TableViewRow>
+					<TableViewRow class="row" id="location" title="Location"> 
+					</TableViewRow>
+					<TableViewRow class="row" id="duration" tittle="Time">
+					</TableViewRow>
+				</TableViewSection>
+			</TableView>
+			<Button id="next" onClick="openMap"></Button>
 	</Window>
 </Alloy>

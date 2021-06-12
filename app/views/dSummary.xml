@@ -1,5 +1,8 @@
 <Alloy>
-	<Window id="dSummary" title="Summary">
-
+	<Window id="dSummary" onFocus="loadTableData">
+		<ActionBar id="actionbar" title="Summary"></ActionBar>
+			<TableView id="table">
+			</TableView>
+			<Button id="submit" onClick="onSubmit"></Button>
 	</Window>
 </Alloy>

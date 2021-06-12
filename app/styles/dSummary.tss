@@ -3,3 +3,28 @@
     layout: "vertical"	
 }
 
+"TableView": {
+    backgroundColor:'transparent',
+    separatorColor: "transparent",
+	separatorStyle: "none",
+    height: "90%",
+    scrollable: true
+}
+
+"#submit": {
+    width: "30%",
+    height: "7%",
+    title: "Submit",
+    color: "white",
+    font: {
+        fontSize: "22"
+    },
+    borderRadius: 10,
+    borderWidth: 0
+}
+
+"#actionbar": {
+    icon: "/actionicon.png",
+    displayHomeAsUp: true,
+    backgroundImage: "/actionbackground.png"
+}

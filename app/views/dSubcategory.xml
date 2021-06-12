@@ -1,7 +1,8 @@
 <Alloy>
 	<Window id="dSubcategory">
-		<TableView id="table" onClick="nextView">
-		
-		</TableView>
+		<ActionBar id="actionbar" tittle="Sub Category"></ActionBar>
+			<ImageView id="img"></ImageView>
+			<Label id="label"></Label>
+			<Slider id="slider" onChange="sliderEvent"></Slider>
 	</Window>
 </Alloy>

@@ -1,7 +1,8 @@
 <Alloy>
-	<Window id="dCategory" title="Category">
-		<TableView id="table">
-		</TableView>
+	<Window id="dCategory">
+		<ActionBar id="actionbar" title="Category"></ActionBar>
+			<TableView id="table" onClick="openSubCategory">
+			</TableView>
 		<Button id="next" onClick="openSummary"></Button>
 	</Window>
 </Alloy>

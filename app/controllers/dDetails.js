@@ -5,11 +5,15 @@ if(winTitle === "persons"){
     $.slider.min = 1;
     $.slider.max = 20;
     $.label.text = "α " + winTitle;
+
+    $.img.image = "/img/1.png";
 }else{
     $.dDetails.title = "Time";
     $.slider.min = 2,
     $.slider.max = 120;
     $.label.text = "α minutes";
+
+    $.img.image = "/img/2.png";
 }
 
 $.dDetails.backgroundImage = "/background/" + Ti.App.Properties.getString("mode") + ".png";
@@ -38,5 +42,14 @@ function sliderEvent(e){
             appealingNum = 62;
         }
     }
+
+    $.img.image = "/img/" + appealingNum + ".png";
+        $.img.width = appealingNum / 2 + 100 + "%";
 }
 
+function go_back(){
+    var actionBar = $.dDetails.activity.actionBar;
+    actionBar.onHomeIconSelected = function() {
+        $.dDetails.close();
+    };
+}

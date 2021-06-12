@@ -15,3 +15,13 @@
     },
     color: "white"
 }
+
+"#img" : {
+    width: "100%"
+}
+
+"#actionbar": {
+    icon: "/actionicon.png",
+    displayHomeAsUp: true,
+    backgroundImage: "/actionbackground.png"
+}

@@ -8,12 +8,13 @@ exports.post = function(url, dataType, postFunction, requestType) {
             onload : function(){
                 if(this.status == "200") {
                     if(ckeckJSON(this.responseText)){
-                        //postFunction(JSON.parse(this.responseText));
 						Ti.App.Properties.setObject(dataType, this.responseText);
+
 						if (postFunction !== ""){
                             postFunction;
                         }
 					}
+                    
                 }
             },
             onerror : function(e) {

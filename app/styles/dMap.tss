@@ -4,3 +4,9 @@
     height: Ti.UI.FILL,
     orientationModes: [Ti.UI.PORTRAIT]
 }
+
+"#actionbar": {
+    icon: "/actionicon.png",
+    displayHomeAsUp: true,
+    backgroundImage: "/actionbackground.png"
+}

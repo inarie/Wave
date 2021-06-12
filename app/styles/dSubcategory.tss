@@ -1,0 +1,29 @@
+"#slider":{
+    min : 1,
+    max : 20,
+    tintColor: "white",
+    width: "80%",
+    bottom: "12%",
+    trackTintColor: "#808080"
+}
+
+"#label" : {
+    bottom: "20%",
+    font: {
+        fontSize: 25,
+        fontWeight: "bold"
+    },
+    color : "white"
+}
+
+"#img" : {
+	width: "80%",
+    borderRadius: 10,
+    borderWidth: 0,
+}
+
+"#actionbar": {
+    icon: "/actionicon.png",
+    displayHomeAsUp: true,
+    backgroundImage: "/actionbackground.png"
+}

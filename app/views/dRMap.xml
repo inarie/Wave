@@ -1,6 +1,7 @@
 <Alloy>
-	<Window id="dRMap" title="Report" class="container">
-		<View id="mapView">
-		</View>
+	<Window id="dRMap" class="container">
+		<ActionBar id="actionbar" tittle="Report"></ActionBar>
+			<View id="mapView">
+			</View>
 	</Window>
 </Alloy>
