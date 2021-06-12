@@ -1,6 +1,6 @@
 <Alloy>
 	<Window id="dSummary" onFocus="loadTableData">
-		<ActionBar id="actionbar" title="Summary"></ActionBar>
+		<ActionBar id="actionbar" title="Summary" onHomeIconItemSelected="go_back"/>
 			<TableView id="table">
 			</TableView>
 			<Button id="submit" onClick="onSubmit"></Button>

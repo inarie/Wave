@@ -55,8 +55,5 @@ function openMap() {
 }
 
 function go_back(){
-    var actionBar = $.dMain.activity.actionBar;
-    actionBar.onHomeIconSelected = function() {
-        $.dMain.close();
-    };
+    $.dMain.close();
 }

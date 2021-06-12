@@ -109,8 +109,5 @@ function onSubmit() {
 }
 
 function go_back(){
-    var actionBar = $.dSummary.activity.actionBar;
-    actionBar.onHomeIconSelected = function() {
-        $.dSummary.close();
-    };
+    $.dSummary.close();
 }

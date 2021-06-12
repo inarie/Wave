@@ -242,8 +242,5 @@ mapView.addEventListener('click', function(e){
 });
 
 function go_back(){
-    var actionBar = $.dMap.activity.actionBar;
-    actionBar.onHomeIconSelected = function() {
-        $.dMap.close();
-    };
+    $.dMap.close();
 }

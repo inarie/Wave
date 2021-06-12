@@ -1,7 +1,8 @@
 <Alloy>
 	<Window id="dRMap" class="container">
-		<ActionBar id="actionbar" tittle="Report"></ActionBar>
+		<ActionBar id="actionbar" tittle="Report" onHomeIconItemSelected="go_back"/>
 			<View id="mapView">
+			
 			</View>
 	</Window>
 </Alloy>

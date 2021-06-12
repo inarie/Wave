@@ -48,8 +48,5 @@ function sliderEvent(e){
 }
 
 function go_back(){
-    var actionBar = $.dDetails.activity.actionBar;
-    actionBar.onHomeIconSelected = function() {
-        $.dDetails.close();
-    };
+    $.dDetails.close();
 }

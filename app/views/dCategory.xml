@@ -1,6 +1,6 @@
 <Alloy>
-	<Window id="dCategory">
-		<ActionBar id="actionbar" title="Category"></ActionBar>
+	<Window id="dCategory" onFocus="loadTableData">
+		<ActionBar id="actionbar" title="Category" onHomeIconItemSelected="go_back"/>
 			<TableView id="table" onClick="openSubCategory">
 			</TableView>
 		<Button id="next" onClick="openSummary"></Button>

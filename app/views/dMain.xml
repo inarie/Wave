@@ -1,11 +1,11 @@
 <Alloy>
 	<Window id="dMain" class="container" onFocus="loadProperties">
-		<ActionBar id="actionbar" title="Pre Survey"></ActionBar>
+		<ActionBar id="actionbar" title="Pre Survey" onHomeIconItemSelected="go_back"/>
 			<TableView id="table" onClick="openSurvey">
 				<TableViewSection id="row">
 					<TableViewRow class="row" id="persons" title="Persons">
 					</TableViewRow>
-					<TableViewRow class="row" id="location" title="Location"> 
+					<TableViewRow class="row" id="location" title="Company"> 
 					</TableViewRow>
 					<TableViewRow class="row" id="duration" tittle="Time">
 					</TableViewRow>

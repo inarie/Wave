@@ -51,6 +51,7 @@ if(Ti.App.Properties.getString("mode") === "dive") {
         rowContent.push( {name: element.name, id: element.id, image: "http://wave-labs.org/images/litter-reporter/menu/"} );
     });
 }
+
 function loadTableData() {
     tableData = [];
     row = "";
@@ -129,8 +130,5 @@ function openSummary() {
 }
 
 function go_back(){
-    var actionBar = $.dCategory.activity.actionBar;
-    actionBar.onHomeIconSelected = function() {
-        $.dCategory.close();
-    };
+    $.dCategory.close();
 }

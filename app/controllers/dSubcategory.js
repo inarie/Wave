@@ -33,8 +33,5 @@ function sliderEvent(e){
 }
 
 function go_back(){
-    var actionBar = $.dRMap.activity.actionBar;
-    actionBar.onHomeIconSelected = function() {
-        $.dRMap.close();
-    };
+    $.dSubcategory.close();
 }

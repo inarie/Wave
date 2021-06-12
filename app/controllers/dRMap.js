@@ -97,8 +97,5 @@ annotationBtn.addEventListener('click', function(){
 });
 
 function go_back(){
-    var actionBar = $.dRMap.activity.actionBar;
-    actionBar.onHomeIconSelected = function() {
-        $.dRMap.close();
-    };
+    $.dRMap.close();
 }

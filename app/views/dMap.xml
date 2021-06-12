@@ -1,6 +1,6 @@
 <Alloy>
 	<Window id="dMap" class="container">
-		<ActionBar id="actionbar" title="Company"></ActionBar>
+		<ActionBar id="actionbar" title="Company" onHomeIconItemSelected="go_back"/>
 			<View id="map_view">
 			
 			</View>

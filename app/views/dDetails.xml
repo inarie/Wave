@@ -1,6 +1,6 @@
 <Alloy>
 	<Window id="dDetails" class="container">
-		<ActionBar id="actionbar" title="Details"></ActionBar>
+		<ActionBar id="actionbar" title="Details" onHomeIconItemSelected="go_back"/>
 			<ImageView id="img"></ImageView>
 			<Label id="label"></Label>
 			<Slider id="slider" onChange="sliderEvent"></Slider>

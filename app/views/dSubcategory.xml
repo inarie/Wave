@@ -1,6 +1,6 @@
 <Alloy>
 	<Window id="dSubcategory">
-		<ActionBar id="actionbar" tittle="Sub Category"></ActionBar>
+		<ActionBar id="actionbar" tittle="Sub Category" onHomeIconItemSelected="go_back"/>
 			<ImageView id="img"></ImageView>
 			<Label id="label"></Label>
 			<Slider id="slider" onChange="sliderEvent"></Slider>
