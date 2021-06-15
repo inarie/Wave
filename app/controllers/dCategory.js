@@ -1,3 +1,4 @@
+var args = arguments[0] || {};
 var textColor = "";
 
 var tableData = [];

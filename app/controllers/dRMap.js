@@ -1,3 +1,5 @@
+var args = arguments[0] || {};
+
 var mapModule = require("ti.map");
 var textColor = "";
 var backgroundColor = "";

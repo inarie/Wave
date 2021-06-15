@@ -1,3 +1,4 @@
+var args = arguments[0].args || {};
 const winTitle = arguments[0].title;
 
 if(winTitle === "persons"){

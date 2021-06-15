@@ -20,15 +20,15 @@ while(true) {
       url += "?page=" + pages;
     }
   
-    creatures.post(url, 'creatures${pages}', "", "GET");
-    const creaturesPage = Ti.App.Properties.getObject('creatures${pages}');
+    creatures.post(url, `creatures${pages}`, "", "GET");
+    const creaturesPage = Ti.App.Properties.getObject(`creatures${pages}`);
     allCreatures.push(JSON.parse(creaturesPage));
   
     if (pages === allCreatures[0].meta.last_page) {
       break;
     }
   
-    Ti.App.Properties.removeProperty('creatures${pages}');
+    Ti.App.Properties.removeProperty(`creatures${pages}`);
     pages++;
   }
   

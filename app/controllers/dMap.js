@@ -1,3 +1,5 @@
+var args = arguments[0] || {};
+
 if(Ti.App.Properties.getString("mode") === "dive"){
     $.dMap.backgroundColor = "#0364BB";
 } else if(Ti.App.Properties.getString("mode") === "whale") {

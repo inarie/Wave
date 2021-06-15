@@ -1,3 +1,4 @@
+var args = arguments[0].args || {};
 var selectedCategories = arguments[0].categories || {};
 
 var textColor = "";
@@ -103,7 +104,6 @@ function onSubmit() {
     for (var i = 0; i < selectedCategories.length ; i++){
         Ti.App.Properties.removeProperty(selectedCategories[i].name);
     }
-    args.popToRootWindow();
     
     alert("Congrats, you made a report!");
 }

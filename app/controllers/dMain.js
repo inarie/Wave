@@ -1,3 +1,5 @@
+var args = arguments[0] || {};
+
 $.dMain.backgroundImage = "/background/" + Ti.App.Properties.getString("mode") + ".png";
 
 if(Ti.App.Properties.getString("mode") === "dive"){
